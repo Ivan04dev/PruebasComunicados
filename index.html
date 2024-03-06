@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Capturar valor de checkbox con JavaScript</title>
+</head>
+<body>
+
+<input type="checkbox" id="miCheckbox" value="valor_checkbox"> Mi Checkbox
+<input type="checkbox" id="miCheckbox" value="valor_checkbox"> Mi Checkbox 2
+<input type="checkbox" id="miCheckbox" value="valor_checkbox"> Mi Checkbox 3
+
+<script>
+document.getElementById("miCheckbox").addEventListener("change", function() {
+    var valorCheckbox = document.getElementById("miCheckbox").value;
+    console.log("El valor del checkbox es: " + valorCheckbox);
+});
+</script>
+
+</body>
+</html>
